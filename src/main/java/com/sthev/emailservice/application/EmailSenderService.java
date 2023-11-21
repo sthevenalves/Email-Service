@@ -1,10 +1,12 @@
 package com.sthev.emailservice.application;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.sthev.emailservice.adapters.EmailSenderGateway;
 import com.sthev.emailservice.core.EmailSenderUseCase;
 
+@Service
 public class EmailSenderService implements EmailSenderUseCase{
 
 	private final EmailSenderGateway emailSenderGateway;
