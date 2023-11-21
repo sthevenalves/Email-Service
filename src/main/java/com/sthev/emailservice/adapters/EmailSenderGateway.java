@@ -1,5 +1,6 @@
 package com.sthev.emailservice.adapters;
 
-public class EmailSenderGateway {
-
+public interface EmailSenderGateway {
+	
+	void senderEmail(String to, String subject, String body);
 }
